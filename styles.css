@@ -102,6 +102,15 @@
       margin-top: 1rem;
       
   }
-  
 
-  
+  .footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding-right: 4rem;
+    padding-inline-start: 0rem;
+
+}
