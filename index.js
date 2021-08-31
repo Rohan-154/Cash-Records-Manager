@@ -44,6 +44,7 @@ function checkLegality() { //function to check wrong input and calculation
       tableHide.style.display="block";
     } else {
       errorMessage("The cash should be atleast equal to bill amount");
+     
     }
   } else {
     errorMessage("Kindly enter valid bill amount(Must be positive value)");
