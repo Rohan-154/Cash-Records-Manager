@@ -1,6 +1,6 @@
 //input- HTML world to JS world
 const bill = document.querySelector("#billAmt");
-const cashGiven = document.querySelector("#cashGvn");
+const cashGiven = document.querySelector("#cashGiven");
 const nxtbutton = document.querySelector("#nxtBtn");
 const checkButton = document.querySelector("#showBtn");
 const message = document.querySelector("#error-message");
