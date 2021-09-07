@@ -31,6 +31,7 @@ function checkLegality() {
   if (bill.value > 0) {
     if (cashGiven.value >= bill.value) {
       const amtreturn = (cashGiven.value - bill.value);
+      console.log(amtreturn)
       
       calculateChange(amtreturn);
       tableHide.style.display = "block";
@@ -48,9 +49,16 @@ function errorMessage(msg) {
 }
 function calculateChange(amtreturn) {
   //function of calculate change amount to be returned
+  if(amtreturn>0){
   for (var i = 0; i < availableNotes.length; i++) {
     const numberofNotes = Math.trunc(amtreturn / availableNotes[i]);
     amtreturn %= availableNotes[i];
     notes[i].innerHTML = numberofNotes;
   }
+}
+else{
+  errorMessage("The cash should be atleast equal to bill amount");
+  tableHide.style.display = "none";
+
+}
 }
